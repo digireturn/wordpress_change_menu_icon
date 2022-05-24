@@ -5,3 +5,9 @@ Add in functions.php the wotna_wp_change_menu_icon() function and call it with s
 wotna_wp_change_menu_icon return false if it don't found slug, otherwase return true.
 
 bool wotna_wp_change_menu_icon(string:slug,string:icon_url)
+
+
+Example for to change post icon:
+<?php 
+wotna_wp_change_menu_icon('edit.php',get_template_directory_uri().'/images/new-icon-post.png');
+?>
